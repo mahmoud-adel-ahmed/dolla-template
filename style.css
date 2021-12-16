@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #131313;
+  padding: 1rem 8rem;
+  z-index: 999;
+}
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+  transition: all 0.1s ease-in-out;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active {
+  color: #00bf85;
+}
+#navbarSupportedContent > button {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 25px;
+  background-color: #00bf85;
+}
+
+/* mid section */
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.mid video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  object-fit: cover;
+}
+.mid .hero {
+  position: relative;
+}
+.mid .hero p {
+  width: 50%;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 1rem;
+}
+.mid .hero a {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  background-color: #00bf85;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.mid .hero a:hover {
+  background: #fff;
+}
+
+/* about/discover section */
+.about {
+  background: #000;
+}
+.about .text,
+.discover .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto;
+}
+.about .text h6,
+.discover .text h6 {
+  font-weight: 800;
+  color: #00bf85;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.about .text h2,
+.discover .text h2 {
+  font-weight: 800;
+  color: #f7f5f4;
+  font-size: 2.7rem;
+}
+.discover .text h2 {
+  color: #111;
+}
+.about .text p,
+.discover .text p {
+  font-weight: 400;
+  color: #f7f5f4;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.discover .text p {
+  color: #000;
+}
+.about .text a,
+.discover .text a {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  background: #00bf85;
+  text-decoration: none;
+  color: #111;
+  transition: all 0.2s ease-in-out;
+}
+.discover .text a {
+  background: #111;
+  color: #fff;
+}
+
+/* service section */
+.service {
+  background: #000;
+}
+.service .one {
+  background: #fff;
+}
+/* footer */
+.footer {
+  background-color: #000;
+}
+body > footer > div.container.p-4.pb-0 > section > a:nth-child(n) {
+  border: none;
+}
+
+/* media */
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0;
+    margin: 0.7rem 0;
+  }
+  #navbarSupportedContent > button {
+    margin: auto;
+    display: block;
+    margin-bottom: 0.1rem;
+  }
+}
